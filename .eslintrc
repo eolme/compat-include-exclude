@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "extends": "@mntm",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "."
+  },
+  "rules": {
+    "no-bitwise": 0,
+    "unicorn/prefer-math-trunc": 0,
+    "@typescript-eslint/ban-types": 0,
+    "@typescript-eslint/prefer-literal-enum-member": 0
+  }
+}

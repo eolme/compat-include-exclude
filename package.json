@@ -1,0 +1,54 @@
+{
+  "name": "compat-include-exclude",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.mts",
+        "default": "./lib/index.mjs"
+      },
+      "default": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "author": {
+    "name": "Anton Petrov",
+    "email": "im@petrov.engineer",
+    "url": "https://petrov.engineer"
+  },
+  "description": "Constructs a filter function which can be used to determine whether or not certain input should be operated upon",
+  "license": "MIT",
+  "keywords": [
+    "filter",
+    "compat",
+    "include",
+    "exclude"
+  ],
+  "homepage": "https://github.com/eolme/compat-include-exclude",
+  "bugs": "https://github.com/eolme/compat-include-exclude/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eolme/compat-include-exclude.git"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@mntm/eslint-config": "^1.4.0",
+    "@types/node": "^20.10.3",
+    "eslint": "^8.55.0",
+    "typescript": "^5.3.2",
+    "vite": "^5.0.4",
+    "vite-plugin-dts": "^3.6.4"
+  },
+  "resolutions": {
+    "esbuild": "^0.19.8"
+  }
+}
